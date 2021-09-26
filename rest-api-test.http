@@ -1,0 +1,19 @@
+GET http://localhost:8008/config/applications
+Authorization: Basic user password
+
+###
+POST http://localhost:8008/config/applications
+Authorization: Basic user password
+Content-Type: application/json
+
+{ "name" : "app-3", "appKey": "some-key" }
+###
+POST http://localhost:8008/config/applications
+Authorization: Basic user password
+Content-Type: application/json
+
+{ "id": "5f6sd21vn5bv", "name" : "app-3", "appKey": "some-key" }
+
+###
+DELETE http://localhost:8008/config/applications/5f6sd21vn5bv
+Authorization: Basic user password
